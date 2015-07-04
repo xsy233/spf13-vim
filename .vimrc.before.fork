@@ -1,5 +1,2 @@
 " Leader keys
-let g:spf13_leader='\<Space>'
-let g:spf13_localleader='\<Space>'
-
-
+let g:spf13_leader="\<Space>"
