@@ -1,3 +1,5 @@
+" GUI settings
+
 if has ('gui_running')
     let g:solarized_contrast="high"
     let g:solarized_visibility="high"
@@ -11,7 +13,11 @@ if has ('gui_running')
     endif
 endif
 
-" Key Mappings
+" Bundle settings
+
+let NERDTreeQuitOnOpen = 0
+
+" Key mappings
 
 " add emacs key binding
 imap <C-a> <Home>
@@ -19,3 +25,4 @@ imap <C-e> <End>
 
 " add idea-like comment shortcut
 map <Leader>/ <Leader>c<Space>
+
