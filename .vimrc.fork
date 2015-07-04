@@ -6,3 +6,8 @@ if has ('gui_running')
     endif
 endif
 
+" Key Mappings
+
+imap <C-a> <Home>
+imap <C-e> <End>
+
