@@ -1,0 +1,5 @@
+" Leader keys
+let g:spf13_leader=';'
+let g:spf13_localleader=';'
+
+
