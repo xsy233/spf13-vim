@@ -1,3 +1,8 @@
+" General settings
+set wrap
+
+
+" GUI settings
 if has ('gui_running')
     let g:solarized_contrast="high"
     let g:solarized_visibility="high"
@@ -11,11 +16,32 @@ if has ('gui_running')
     endif
 endif
 
-" Key Mappings
+" Bundles settings
+" NERDTree {
+    let NERDTreeQuitOnOpen = 0
+    let NERDTreeMouseMode = 1
+    let g:nerdtree_tabs_open_on_gui_startup = 1
+    let g:nerdtree_tabs_open_on_new_tab=1
+" }
 
+" Key Mappings
+"
 " add emacs key binding
 imap <C-a> <Home>
 imap <C-e> <End>
 
 " add idea-like comment shortcut
 map <Leader>/ <Leader>c<Space>
+
+" switch to specific tab numbers with Command-number
+noremap <D-1> :tabn 1<CR>
+noremap <D-2> :tabn 2<CR>
+noremap <D-3> :tabn 3<CR>
+noremap <D-4> :tabn 4<CR>
+noremap <D-5> :tabn 5<CR>
+noremap <D-6> :tabn 6<CR>
+noremap <D-7> :tabn 7<CR>
+noremap <D-8> :tabn 8<CR>
+noremap <D-9> :tabn 9<CR>
+noremap <D-9> :tablast<CR>
+
