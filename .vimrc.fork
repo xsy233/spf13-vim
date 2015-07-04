@@ -1,0 +1,8 @@
+if has ('gui_running')
+    color solarized
+    if has('gui_macvim')
+        set guifont=Inconsolata\ for\ Powerline:h13
+        set transparency=2 " Make the window slightly transparent
+    endif
+endif
+
