@@ -1,6 +1,7 @@
 " General settings
 set wrap
-
+let g:indent_guides_enable_on_vim_startup = 0
+set nospell
 
 " GUI settings
 if has ('gui_running')
@@ -20,8 +21,23 @@ endif
 " NERDTree {
     let NERDTreeQuitOnOpen = 0
     let NERDTreeMouseMode = 1
-    let g:nerdtree_tabs_open_on_gui_startup = 1
-    let g:nerdtree_tabs_open_on_new_tab=1
+    "let g:nerdtree_tabs_open_on_gui_startup = 1
+    "let g:nerdtree_tabs_open_on_new_tab=1
+" }
+
+" Syntastic {
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
+" }
+
+" Python {
+    let g:pymode_lint_checkers = ['pyflakes']
 " }
 
 " Key Mappings
