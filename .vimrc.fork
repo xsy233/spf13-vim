@@ -62,4 +62,4 @@ noremap <D-9> :tabn 9<CR>
 noremap <D-9> :tablast<CR>
 
 " remap the default emmet key
-let g:user_emmet_expandabbr_key = '<Leader><tab>'
+"let g:user_emmet_expandabbr_key = '<Leader><tab>'  slow, comment out
