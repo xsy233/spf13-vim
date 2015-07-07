@@ -1,18 +1,20 @@
 " General settings
+set autoread
 set wrap
 let g:indent_guides_enable_on_vim_startup = 0
 set nospell
+color molokai
 
 " GUI settings
 if has ('gui_running')
-    let g:solarized_contrast="high"
-    let g:solarized_visibility="high"
+    "let g:solarized_contrast="high"
+    "let g:solarized_visibility="high"
+    color molokai 
     if has('gui_macvim')
-        set guifont=Menlo:h12
+        set guifont=Menlo:h13
         set guioptions-=L
         set guioptions-=r
         set guioptions-=T
-        "set guifont=Inconsolata\ for\ Powerline:h12
         set transparency=2 " Make the window slightly transparent
     endif
 endif

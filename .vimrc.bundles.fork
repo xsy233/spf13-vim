@@ -1,2 +1,3 @@
 " Programming
     Bundle 'mattn/emmet-vim'
+    Bundle 'marijnh/tern_for_vim'
