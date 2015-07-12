@@ -1,21 +1,26 @@
+" Filetype settings
+
 " General settings
 set autoread
 set wrap
 let g:indent_guides_enable_on_vim_startup = 0
 set nospell
-color molokai
+let g:solarized_contrast="high"
+color solarized
 
 " GUI settings
 if has ('gui_running')
-    "let g:solarized_contrast="high"
-    "let g:solarized_visibility="high"
-    color molokai 
+    set noerrorbells 
+    set novisualbell
+    set t_vb=
+    let g:solarized_contrast="high"
+    color solarized
     if has('gui_macvim')
-        set guifont=Menlo:h13
+        set guifont=Monaco:h13
         set guioptions-=L
         set guioptions-=r
         set guioptions-=T
-        set transparency=2 " Make the window slightly transparent
+        set transparency=5 " Make the window slightly transparent
     endif
 endif
 
@@ -65,3 +70,10 @@ noremap <D-9> :tablast<CR>
 
 " remap the default emmet key
 "let g:user_emmet_expandabbr_key = '<Leader><tab>'  slow, comment out
+
+" making and restoring sessions
+map <F2> :mksession! ~/vim_session <cr> " Quick write session with F2
+map <F3> :source ~/vim_session <cr>     " And load session with F3
+
+" for js-beautify
+map <Leader><f> JsBeautify()<cr>
