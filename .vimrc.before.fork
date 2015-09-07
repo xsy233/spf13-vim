@@ -2,3 +2,5 @@
 let g:spf13_leader="\<Space>"
 " list only the plugin groups you will use
 let g:spf13_bundle_groups=['general', 'writing', 'programming', 'python', 'javascript', 'html', 'misc', 'neocomplete']
+let g:base16_shell_path="~/base16-builder/output/shell"
+let g:spf13_map_cr_omni_complete   = 1

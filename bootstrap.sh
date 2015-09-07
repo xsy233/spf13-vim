@@ -30,7 +30,7 @@ for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && [ ! -L $i ] && m
 
 if [ ! -e $endpath/.git ]; then
     echo "cloning xsy233's spf13-vim"
-    git clone git@github.com:xsy233/spf13-vim.git $endpath
+    git clone https://github.com/xsy233/spf13-vim.git $endpath
 else
     echo "updating xsy233's spf13-vim"
     cd $endpath && git pull
@@ -54,7 +54,7 @@ fi
 
 if [ ! -e $HOME/.vim/bundle/vundle ]; then
     echo "Installing Vundle"
-    git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+    git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 fi
 
 echo "update/install plugins using Vundle"
